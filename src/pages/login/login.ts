@@ -3,7 +3,6 @@ import {AlertController, IonicPage, NavController, NavParams} from 'ionic-angula
 import {Subjects} from "../../app/subject";
 import {ServiceProvider} from "../../providers/service/service";
 import 'rxjs/add/operator/switchMap';
-import {DetailsPage} from "../details/details";
 
 
 /**
