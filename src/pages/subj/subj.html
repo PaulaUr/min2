@@ -1,0 +1,19 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Subjects</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-searchbar (ionInput)="searchSubj($event)"></ion-searchbar>
+  <ion-list>
+
+    <button ion-item *ngFor="let item of subjects | search: term" (click)="itemSelected(item)">
+      {{ item.name }} <h4>Alumnos: {{item.student.length}}</h4>
+
+    </button>
+  </ion-list>
+</ion-content>

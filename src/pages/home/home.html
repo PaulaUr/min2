@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Subjects</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-header>
+      Enrolment
+    </ion-card-header>
+
+    <ion-list>
+      <button ion-item (click)="openSubj()">
+        <ion-icon name="book"  item-start></ion-icon>
+        Subjects
+      </button>
+
+      <button ion-item (click)="openStud()">
+        <ion-icon name="people"  item-start></ion-icon>
+        Students
+      </button>
+
+      <button ion-item (click)="openSearch()">
+        <ion-icon name="search"  item-start></ion-icon>
+        Search subjects
+      </button>
+
+      <button ion-item (click)="openEnrolment()">
+        <ion-icon name="create" item-start></ion-icon>
+        Enrolment!!
+      </button>
+
+    </ion-list>
+  </ion-card>
+  <!--
+  <ion-list>
+    <button ion-item *ngFor="let item of subjects" (click)="itemSelected(item)">
+      {{ item.name }}
+    </button>
+  </ion-list>-->
+</ion-content>
